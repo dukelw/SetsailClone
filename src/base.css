@@ -1,0 +1,90 @@
+:root {
+  --primary-color-black: #000000;
+  --primary-color-white: #ffffff;
+  --before-nav-item-color: #3fd0d4;
+  --before-nav-language-color: #3abdc1;
+  --before-nav-width: 40px;
+  --header-nav-width: 80px;
+}
+
+.white-color {
+  color: var(--primary-color-white) !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: bolder linear .3s;
+}
+
+.no-pt {
+  padding-top: 0 !important;
+}
+
+.pt-180 {
+  padding-top: 180px !important;
+}
+
+.pt-136 {
+  padding-top: 136px !important;
+}
+
+.space-32 {
+  height: 32px;
+}
+
+@keyframes floatToDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes flyToUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes floatFromRight {
+  0% {
+    transform: translateX(600px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes bolder {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.9;
+  }
+}
+
